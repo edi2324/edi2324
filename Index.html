@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voice Chat Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Real-Time Chat & Call</h1>
+  <input id="username" placeholder="Enter your name" />
+  <button onclick="join()">Join</button>
+  <div id="chat" hidden>
+    <textarea id="messages" readonly></textarea><br>
+    <input id="message" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button><br>
+    <button onclick="startCall()">Call</button>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
